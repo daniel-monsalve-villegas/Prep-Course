@@ -56,8 +56,8 @@ function multiplica(x, y) {
 function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
-  let dividir = x / y;
-  return divivir;
+  let division = x / y;
+  return division;
 }
 
 function sonIguales(x, y) {
@@ -242,15 +242,10 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  let vocal = ['a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U'];
-  for(let i = 0; i < vocal.length; i++) {
-    if(letra.length > 1) {
-      return "Dato incorrecto";
-    } else if(letra != vocal[i]) {
-      return "Dato incorrecto";
-    } else {
-      return "Es vocal";
-    }
+  if(letra === 'a' || letra === 'e' || letra === 'i' || letra === 'o' || letra === 'u') {
+    return "Es vocal";
+  } else {
+    return "Dato incorrecto";
   }
 }
 
